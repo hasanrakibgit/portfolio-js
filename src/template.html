@@ -35,30 +35,8 @@
     </script>
 
     <!-- Remove this script once you setup your custom portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_lWgtwIL9Wm2Jfi4DZixK9');
-        })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
-    </script>
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+    
   </head>
 
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
@@ -105,8 +83,10 @@
                 For now my goal is to be a senior web developer and I like coding.
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/uc?export=download&id=1uZOzglZFZB4b-RW27ZfpuwfzqXrJa7Jn">
-                  Download Resume
+                <a target="_blank" class="cta-btn cta-btn--resume" href="">View Resume</a>
+                  <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/uc?export=download&id=1uZOzglZFZB4b-RW27ZfpuwfzqXrJa7Jn">Download Resume</a>
+                  
+                  
                 </a>
               </span>
             </div>
@@ -312,7 +292,7 @@
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">Please fill up this form
-            <form id="contact-form" >
+            <form >
               <div class="form-group mt-5 p-2">
                       <input type="text" class="form-control p-4" placeholder="Name *" name="name"/>
                   </div>
